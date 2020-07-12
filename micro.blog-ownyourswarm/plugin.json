@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "title": "LatLong",
-  "description": "Takes OwnYourSwarm coordinates and passes them to a marker on a map.",
+  "description": "Takes Foursquare logins via OwnYourSwarm and forms a mivro.blog article link that passes the coordinates to a marker on a map and back.",
   "includes": [
     "map_meta.html"
   ]
