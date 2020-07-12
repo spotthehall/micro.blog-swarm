@@ -1,0 +1,8 @@
+{
+  "version": "1.0",
+  "title": "LatLong",
+  "description": "Takes OwnYourSwarm coordinates and passes them to a marker on a map.",
+  "includes": [
+    "map_meta.html"
+  ]
+}
