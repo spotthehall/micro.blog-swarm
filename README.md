@@ -1,6 +1,6 @@
 # micro.blog-swarm
 
-Links Foursquare logins via OwnYourSwarm to a micro.blog map (and back).
+Links Foursquare logins via OwnYourSwarm to a micro.blog article and map.
 
 ## Requires:
 
