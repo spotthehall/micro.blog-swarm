@@ -44,7 +44,7 @@ var baseLayers = {
 
 {{ $list := (where .Site.Pages "Type" "post") }} {{ range $list }}{{ if.Params.location_latitude }}
   var leafIcon = L.icon({
-    iconUrl: '/gmarker.png',
+    iconUrl: '/gmarker.svg',
     iconAnchor:   [10,20],
     popupAnchor:  [0,-22]
 });
