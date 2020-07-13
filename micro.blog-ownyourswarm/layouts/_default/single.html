@@ -27,9 +27,9 @@ if (location.search.substring(1)) {
     vars = url.vars
 }
 else {
-    var lat = 51.98488;
-    var lng = 0.3186;
-    var zmn = 6
+    var lat = 43.33957;
+    var lng =  4.57031;
+    var zmn = 2
 }
 
 var map = new L.Map('map', {
@@ -44,10 +44,8 @@ var baseLayers = {
 
 var leafIcon = L.icon({
     iconUrl: 'https://davidhall.uk/images/green.png',
-    shadowUrl: 'https://davidhall.uk/images/pinsh.png',
-    iconAnchor:   [12,20],
-    shadowAnchor: [10,19],
-    popupAnchor:  [-5,-20]
+    iconAnchor:   [13,26],
+    popupAnchor:  [0,-26]
 });
 
 {{ $list := (where .Site.Pages "Type" "post") }} {{ range $list }}{{ if.location_latitude }}
