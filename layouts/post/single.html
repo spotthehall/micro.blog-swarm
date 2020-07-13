@@ -15,7 +15,7 @@
    {{ .Content }}
    </div>
   {{ if .Params.location_latitude }}
-    <a href="/map/?{{ .Params.location_latitude }},{{ .Params.location_longitude}},16"><img src="https://davidhall.uk/geotag.png" /></a>
+    <a href="/map/?{{ .Params.location_latitude }},{{ .Params.location_longitude}},16"><img src="/geotag.png" width="20" height="20" style="max-width: 20px;" /></a>
   {{ end }}
  </div>
 
