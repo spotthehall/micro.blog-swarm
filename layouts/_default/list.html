@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="content list h-feed">
+
+{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
+{{ range $paginator.Pages  }}
+
+  <div class="list-item h-entry">
+	{{ if .Title }}
+		<h1 class="home-title">{{ .Title }}</h1>
+	{{ end }}
+    <div class="content post e-content">
+      {{ .Content }}
+    </div>
+    {{ if .location_latitude }}
+      <a href="/map/?{{ .location_latitude }},{{ .location_longitude }},16"><img src="https://davidhall.uk/geotag.png" /></a>
+    {{ end }}
+    <div class="list-post-date">
+      <a href="{{ .Permalink }}" class="u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></a>
+    </div>
+  </div>
+
+{{ end }}
+
+</div>
+
+{{ partial "pagination.html" . }}
+
+{{ end }}

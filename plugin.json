@@ -1,0 +1,8 @@
+{
+  "version": "1.0",
+  "title": "LatLong",
+  "description": "Takes Foursquare Swarm logins via OwnYourSwarm and forms a micro.blog article link that passes the coordinates to a marker on a map and back.",
+  "includes": [
+    "map_meta.html"
+  ]
+}
