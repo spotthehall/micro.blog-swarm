@@ -43,9 +43,9 @@ var baseLayers = {
 };
 
 var leafIcon = L.icon({
-    iconUrl: 'https://davidhall.uk/images/green.png',
-    iconAnchor:   [13,26],
-    popupAnchor:  [0,-26]
+    iconUrl: 'https://davidhall.uk/images/gmarker.png',
+    iconAnchor:   [10,20],
+    popupAnchor:  [0,-22]
 });
 
 {{ $list := (where .Site.Pages "Type" "post") }} {{ range $list }}{{ if.location_latitude }}
