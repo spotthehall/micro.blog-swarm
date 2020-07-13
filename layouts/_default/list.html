@@ -12,7 +12,7 @@
       {{ .Content }}
     </div>
     {{ if .Params.location_latitude }}
-      <a href="/map/?{{ .Params.location_latitude }},{{ .Params.location_longitude }},16"><img src="/geotag.png" width="20" height="20" style="max-width: 20px;" /></a>
+      <a href="/map/?{{ .Params.location_latitude }},{{ .Params.location_longitude }},16"><img src="/geotag.svg" width="20" height="20" style="max-width: 20px;" /></a>
     {{ end }}
     <div class="list-post-date">
       <a href="{{ .Permalink }}" class="u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></a>
