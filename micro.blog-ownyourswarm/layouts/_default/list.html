@@ -9,7 +9,7 @@
 		<h1 class="home-title">{{ .Title }}</h1>
 	{{ end }}
   {{ if .location_latitude }}
-    <a href="/map/?{{ .location_latitude }},{{ .location_longitude }}"><img src="https://davidhall.uk/geotag.png" /></a>
+    <a href="/map/?{{ .location_latitude }},{{ .location_longitude }},16"><img src="https://davidhall.uk/geotag.png" /></a>
   {{ end }}
     <div class="content post e-content">
       {{ .Content }}
