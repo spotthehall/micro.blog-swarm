@@ -42,13 +42,13 @@ var baseLayers = {
     "Open Street Map": osm
 };
 
-{{ $list := (where .Site.Pages "Type" "post") }} {{ range $list }}{{ if.location_latitude }}
+{{ $list := (where .Site.Pages "Type" "post") }} {{ range $list }}{{ if.Params.location_latitude }}
   var leafIcon = L.icon({
     iconUrl: 'https://davidhall.uk/images/gmarker.png',
     iconAnchor:   [10,20],
     popupAnchor:  [0,-22]
 });
-var marker = new L.Marker([{{ .location_latitude  | safeJS  }},{{ .location_longitude  | safeJS  }}], {icon: leafIcon} ).addTo(map).bindPopup("<a href='{{ .Permalink }}'>{{ .Date.Format "2006-01-02" }}</a>");
+var marker = new L.Marker([{{ .Params.location_latitude  | safeJS  }},{{ .Params.location_longitude  | safeJS  }}], {icon: leafIcon} ).addTo(map).bindPopup("<a href='{{ .Permalink }}'>{{ .Date.Format "2006-01-02" }}</a>");
 {{ end }} {{ end }}
 
 function onMapClick(e) {
